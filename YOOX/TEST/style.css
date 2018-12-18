@@ -1,0 +1,77 @@
+html,body{height:100%;}
+body{background: #F2F2F2; font-family: "Open Sans"; height: 100%; margin: 0;}
+
+
+/*-----------------------------
+Cover
+-----------------------------*/
+.cover{height:70%;
+	background-image: url("https://source.unsplash.com/category/buildings");
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-position: center center;
+	position:relative;
+}
+
+
+
+
+
+
+/*-----------------------------
+Footer
+-----------------------------*/
+
+.footer{background: #333333; padding:30px;color:#fff; margin-top: 40px}
+
+
+/*-----------------------------
+Single
+-----------------------------*/
+.panel{  margin: 0px auto; margin-top: -60px; background: #F2F2F2; padding:20px 40px;position: relative; z-index: 1; }
+
+.logo { width: 40%; height: 40%; }
+
+.tit { color: #555; }
+
+
+
+/*-----------------------------
+Smartphone
+-----------------------------*/
+@media (max-width: 767px){
+
+	.logo { width: 50%; height: 50%; position: absolute; z-index: 10; top: -750px; }
+  .cover { position: relative; z-index: 2; top: 10%; }
+}
+
+
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: #333333;
+  display: none;
+  padding: 80px 20px;
+  height: 10%;
+  margin-right: 20px;
+}
+
+
+
