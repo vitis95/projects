@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
-	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
 
   <header class="header clearfix">
 
     <a href="" class="header__logo">Log</a>
     <a href="" class="header__icon-bar">
-        <span></span>
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </a>
     <ul class="header__menu animate">
-      <li class="header__menu__item"><a href="">ITEM1</a></li>
-      <li class="header__menu__item"><a href="">ITEM1</a></li>
-      <li class="header__menu__item"><a href="">ITEM1</a></li>
-      <li class="header__menu__item"><a href="">ITEM1</a></li>
-      <li class="header__menu__item"><a href="">ITEM1</a></li>
-      <li class="header__menu__item"><a href="">ITEM1</a></li>
-      <li class="header__menu__item"><a href="">ITEM1</a></li>
+      <li class="header__menu__item">
+        <a href="">ITEM1</a>
+      </li>
+      <li class="header__menu__item">
+        <a href="">ITEM1</a>
+      </li>
+      <li class="header__menu__item">
+        <a href="">ITEM1</a>
+      </li>
+      <li class="header__menu__item">
+        <a href="">ITEM1</a>
+      </li>
+      <li class="header__menu__item">
+        <a href="">ITEM1</a>
+      </li>
+      <li class="header__menu__item">
+        <a href="">ITEM1</a>
+      </li>
+      <li class="header__menu__item">
+        <a href="">ITEM1</a>
+      </li>
     </ul>
   </header>
 
@@ -42,19 +58,62 @@
       </div>
     </div>
   </section>
-  
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
-<script>
-    $(document).ready(function(){
- 
-       $(".header__icon-bar").click(function(e){
- 
-         $(".header__menu").toggleClass('is-open');
-         e.preventDefault();
- 
-       });
+  <section class="cards clearfix"> <!-- usiamo clearfix per pulire il float -->
+    <div class="card">
+      <img class="card__image" src="https://source.unsplash.com/random/400x260" alt="">
+      <div class="card__copy">
+        <h3>Title card</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga optio quidem obcaecati accusantium ab iure nam ducimus
+          tempora quaerat expedita! Quisquam molestiae optio obcaecati vel, fugit autem quo nostrum maiores!</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card__image" src="https://source.unsplash.com/category/food/400x260" alt="">
+      <div class="card__copy">
+        <h3>Title card</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga optio quidem obcaecati accusantium ab iure nam ducimus
+          tempora quaerat expedita! Quisquam molestiae optio obcaecati vel, fugit autem quo nostrum maiores!</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card__image" src="https://source.unsplash.com/category/people/400x260" alt="">
+      <div class="card__copy">
+        <h3>Title card</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga optio quidem obcaecati accusantium ab iure nam ducimus
+          tempora quaerat expedita! Quisquam molestiae optio obcaecati vel, fugit autem quo nostrum maiores!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner clearfix">
+    <div class="banner__image"></div>
+      <div class="banner__copy">
+        <div class="banner__copy__text">
+        <h3>Banner Title</h3>
+        <h4>Sub Title</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, commodi facilis. Officia quod tenetur dicta, molestias, ducimus eveniet consequatur deleniti placeat modi velit sapiente culpa optio nulla officiis in autem.</p>
+      </div>      
+      </div>
+  </section>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fuga a earum eos reprehenderit sequi molestiae perferendis voluptas obcaecati id, assumenda rerum porro non laboriosam consequatur dolor, labore voluptatum aut!</p>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $(".header__icon-bar").click(function (e) {
+
+        $(".header__menu").toggleClass('is-open');
+        e.preventDefault();
+
+      });
     });
- </script>
+  </script>
 </body>
+
 </html>
