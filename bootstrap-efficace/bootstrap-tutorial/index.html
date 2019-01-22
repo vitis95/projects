@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+
+		<!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-example" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-example">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="#carousel">Carousel</a></li>
+				<li><a href="#four-columns">4 Columns</a></li>
+
+				<li><a href="#two-columns">2 Columns</a></li>
+
+
+
+				<li><a href="#">Link</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown 2 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div id="carousel" class="carousel slide" data-ride="carousel">
+
+	<!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" style="background-image: url(https://source.unsplash.com/category/nature/);">
+      <div class="carousel-caption animated fadeInUp">
+        <h3>Slide 1 lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quas perferendis nisi rerum laudantium amet vitae. Nostrum dolore hic, perferendis dignissimos alias dolores amet. Mollitia similique omnis esse dignissimos aliquid.</p>
+      </div>
+    </div>
+    <div class="item" style="background-image: url(https://source.unsplash.com/category/buildings);">
+      <div class="carousel-caption animated fadeInUp">
+				<h3>Slide 2 lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quas perferendis nisi rerum laudantium amet vitae. Nostrum dolore hic, perferendis dignissimos alias dolores amet. Mollitia similique omnis esse dignissimos aliquid.</p>
+      </div>
+    </div>
+		<div class="item" style="background-image: url(https://source.unsplash.com/category/food);">
+      <div class="carousel-caption animated fadeInUp">
+				<h3>Slide 3 lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quas perferendis nisi rerum laudantium amet vitae. Nostrum dolore hic, perferendis dignissimos alias dolores amet. Mollitia similique omnis esse dignissimos aliquid.</p>
+      </div>
+    </div>
+  </div>
+
+	<!-- Controls -->
+  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+
+
+<div class="container">
+
+	<div class="row big-padding animated fadeInUp" id="four-columns">
+		<div class="col-md-3 col-xs-6">
+			<h3>Title</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
+		</div>
+		<div class="col-md-3 col-xs-6">
+			<h3>Title</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
+		</div>
+		<div class="col-md-3 col-xs-6">
+			<h3>Title</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
+		</div>
+		<div class="col-md-3 col-xs-6">
+			<h3>Title</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis soluta et fugit, in blanditiis repellat nam, voluptatibus consectetur, debitis pariatur quas voluptates quasi minima temporibus earum explicabo. Adipisci, impedit, praesentium.</p>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row big-padding" id="two-columns">
+		<div class="col-sm-6">
+			<h3>Test</h3>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia tenetur, iste eaque voluptatem explicabo, animi quidem, est at accusantium eius quisquam doloribus tempora eum et temporibus debitis a. Earum, vero.</p>
+		</div>
+		<div class="col-sm-6">
+			<h3>Test</h3>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia tenetur, iste eaque voluptatem explicabo, animi quidem, est at accusantium eius quisquam doloribus tempora eum et temporibus debitis a. Earum, vero.</p>
+		</div>
+	</div>
+
+	<hr>
+
+	<button type="button" class="btn btn-default" title="Popover title" data-container="body" data-toggle="popover" data-placement="top" data-html="true" data-content=" <img class='img-responsive' src='immagine-popover.jpg' alt='' /> <p>Lorem ipsum <strong>dolor sit</strong> amet, consectetur adipisicing elit. Laudantium modi, autem excepturi vero incidunt, cupiditate, repellat dolorem a, itaque vel quaerat beatae aspernatur. Itaque labore fuga qui recusandae, iusto illo.</p>"> <!--  data-html="true" - tratta il contenuto come html --> <!-- class='img-responsive' - semplicemente rende l'immagine responsive -->
+  	Informazioni location 1
+	</button>
+
+	<button type="button" class="btn btn-default" title="Popover title" data-container="body" data-toggle="popover" data-placement="top" data-html="true" data-content=" <img class='img-responsive' src='immagine-popover.jpg' alt='' /> <p>Lorem ipsum <strong>dolor sit</strong> amet, consectetur adipisicing elit. Laudantium modi, autem excepturi vero incidunt, cupiditate, repellat dolorem a, itaque vel quaerat beatae aspernatur. Itaque labore fuga qui recusandae, iusto illo.</p>">
+  	Informazioni location 1
+	</button>
+
+	<hr>
+
+
+	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia tenetur, iste eaque voluptatem explicabo, animi quidem, est at accusantium eius quisquam doloribus tempora eum et temporibus debitis a. Earum, vero.</p>
+
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	  Launch demo modal
+	</button>
+
+	<hr>
+
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-1" aria-controls="tab-1" role="tab" data-toggle="tab">Tab 1</a></li>
+    <li role="presentation"><a href="#tab-2" aria-controls="tab-2" role="tab" data-toggle="tab">Tab 2</a></li>
+    <li role="presentation"><a href="#tab-3" aria-controls="tab-3" role="tab" data-toggle="tab">Tab 3</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="tab-1">
+
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Tab 1</h3>
+		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus porro natus, sint saepe ea odio repellendus nostrum eum optio pariatur nam id, aut velit ullam. Deleniti impedit quos necessitatibus doloremque.</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>Tab 1</h3>
+		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus porro natus, sint saepe ea odio repellendus nostrum eum optio pariatur nam id, aut velit ullam. Deleniti impedit quos necessitatibus doloremque.</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>Tab 1</h3>
+		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus porro natus, sint saepe ea odio repellendus nostrum eum optio pariatur nam id, aut velit ullam. Deleniti impedit quos necessitatibus doloremque.</p>
+				</div>
+			</div>
+
+		</div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-2">
+
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>Tab2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum laudantium ullam quisquam, modi debitis est sunt explicabo natus quo possimus magni, totam, minus. Velit perspiciatis consectetur esse cum, eum minus.</p>
+				</div>
+				<div class="col-sm-6">
+					<h3>Tab2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum laudantium ullam quisquam, modi debitis est sunt explicabo natus quo possimus magni, totam, minus. Velit perspiciatis consectetur esse cum, eum minus.</p>
+				</div>
+			</div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab-3">
+
+			<div class="row">
+				<div class="col-sm-3">
+					<h3>Tab3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ab maxime rem est dolores libero, deserunt veritatis voluptatem enim deleniti, amet illo eveniet accusamus magni culpa quod nemo natus nulla!</p>
+				</div>
+				<div class="col-sm-3">
+					<h3>Tab3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ab maxime rem est dolores libero, deserunt veritatis voluptatem enim deleniti, amet illo eveniet accusamus magni culpa quod nemo natus nulla!</p>
+				</div>
+				<div class="col-sm-3">
+					<h3>Tab3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ab maxime rem est dolores libero, deserunt veritatis voluptatem enim deleniti, amet illo eveniet accusamus magni culpa quod nemo natus nulla!</p>
+				</div>
+				<div class="col-sm-3">
+					<h3>Tab3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ab maxime rem est dolores libero, deserunt veritatis voluptatem enim deleniti, amet illo eveniet accusamus magni culpa quod nemo natus nulla!</p>
+				</div>
+			</div>
+
+    </div>
+  </div>
+
+
+
+	<div class="panel-group big-padding" id="accordion" role="tablist" aria-multiselectable="true">
+
+  <div class="panel panel-default">
+
+      <h4>
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          01. Come arrivare alla location?
+        </a>
+      </h4>
+
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			<div class="panel-padding">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			</div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+
+      <h4>
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            02. Domanda numero lorem ipsum ?
+        </a>
+      </h4>
+
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+			<div class="panel-padding">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			</div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+
+      <h4>
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          03. Domanda numero lorem ipsum ?
+        </a>
+      </h4>
+
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			<div class="panel-padding">
+				Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			</div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+	<p><a class="btn btn-default" href="#" role="button">Link</a>
+	<button class="btn btn-lg btn-primary" type="submit">Button</button>
+	<input class="btn btn-success btn-sm" type="button" value="Input">
+	<input class="btn btn-danger btn-xs" type="submit" value="Submit">
+	</p>
+
+	<hr/>
+
+	<a href="" class="btn btn-info btn-lg btn-block"> Test Btn</a>
+
+
+
+
+</div><!-- / container -->
+
+<div class="footer">
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			</div>
+			<div class="modal-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim minus culpa, odit, provident modi eos, consequuntur soluta, delectus beatae adipisci voluptatibus recusandae neque dolore fuga nihil in consequatur ab amet.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim minus culpa, odit, provident modi eos, consequuntur soluta, delectus beatae adipisci voluptatibus recusandae neque dolore fuga nihil in consequatur ab amet.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim minus culpa, odit, provident modi eos, consequuntur soluta, delectus beatae adipisci voluptatibus recusandae neque dolore fuga nihil in consequatur ab amet.</p>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim minus culpa, odit, provident modi eos, consequuntur soluta, delectus beatae adipisci voluptatibus recusandae neque dolore fuga nihil in consequatur ab amet.</p>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	$('body').scrollspy({ target: '#navbar-example' });
+
+	$('[data-toggle="popover"]').popover(); // serve ad iniziliazzare il popover
+
+	$(".navbar-collapse ul li a[href^='#']").on('click',function(e){
+
+		target = this.hash;
+		e.preventDefault();
+
+		$('html,body').animate({
+			scrollTop : $(this.hash).offset().top
+		}, 600, function(){
+			window.location.hash = target;
+		});
+
+	});
+
+</script>
+
+</body>
+</html>
