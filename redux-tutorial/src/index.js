@@ -24,6 +24,8 @@ const action = { // 3. action declaration
     }
 }
 
+////// CIAONE 
+
 store.dispatch(action); // 4. dispatch an action
 
 console.log(store.getState()) // 6. stampa
