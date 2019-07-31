@@ -54,77 +54,99 @@ import * as serviceWorker from './serviceWorker';
 
 
 
-function ComponenteEsempio(props) {
-    return <h1> CIAO, {props.nome}</h1>;
-}
+// function ComponenteEsempio(props) {
+//     return <h1> CIAO, {props.nome}</h1>;
+// }
 
-// const elemento = <Ciao nome="Ivan" />;
+// // const elemento = <Ciao nome="Ivan" />;
+// // ReactDOM.render(
+// //     elemento,
+// //     document.getElementById('root')
+// // );
+
+
+
+// function Funzione() {
+//     return (
+//         <div>
+//             <ComponenteEsempio nome="Ivan" />
+//             <ComponenteEsempio nome="Luca" />
+//             <ComponenteEsempio nome="Mirko" />
+//         </div>
+//     );
+// }
+
 // ReactDOM.render(
-//     elemento,
+//     <Funzione />,
+//     document.getElementById('root')
+// );
+
+
+// function formatDate(date) {
+//     return date.toLocaleDateString();
+// }
+
+// function Comment(props) {
+//     return (
+//         <div className="Comment">
+//             <div className="UserInfo">
+//                 <img
+//                     className="Avatar"
+//                     src={props.author.avatarUrl}
+//                     alt={props.author.name}
+//                 />
+//                 <div className="UserInfo-name">
+//                     {props.author.name}
+//                 </div>
+//             </div>
+//             <div className="Comment-text">{props.text}</div>
+//             <div className="Comment-date">
+//                 {formatDate(props.date)}
+//             </div>
+//         </div>
+//     );
+// }
+
+// const comment = {
+//     date: new Date(),
+//     text: 'I hope you enjoy learning React!',
+//     author: {
+//         name: 'Hello Kitty',
+//         avatarUrl: 'https://placekitten.com/g/64/64',
+//     },
+// };
+
+
+// ReactDOM.render(
+//     <Comment
+//         date={comment.date}
+//         text={comment.text}
+//         author={comment.author}
+//     />,
 //     document.getElementById('root')
 // );
 
 
 
-function Funzione() {
-    return (
-        <div>
-            <ComponenteEsempio nome="Ivan" />
-            <ComponenteEsempio nome="Luca" />
-            <ComponenteEsempio nome="Mirko" />
-        </div>
+ function tick() {
+     const element = (
+         <div>
+             <h1>HELLO WORLD!</h1>
+             <h2>It is {new Date().toLocaleTimeString()}.</h2>
+         </div>
+     );
+     ReactDOM.render(
+        element, 
+        document.getElementById('root')
     );
-}
+ }
 
-ReactDOM.render(
-    <Funzione />,
-    document.getElementById('root')
-);
+setInterval(tick, 1000); // ogni secondo viene chiamata la callback tick - che a sua volta chiama la funzione ReactDOM.render()
 
 
-function formatDate(date) {
-    return date.toLocaleDateString();
-  }
-  
-  function Comment(props) {
-    return (
-      <div className="Comment">
-        <div className="UserInfo">
-          <img
-            className="Avatar"
-            src={props.author.avatarUrl}
-            alt={props.author.name}
-          />
-          <div className="UserInfo-name">
-            {props.author.name}
-          </div>
-        </div>
-        <div className="Comment-text">{props.text}</div>
-        <div className="Comment-date">
-          {formatDate(props.date)}
-        </div>
-      </div>
-    );
-  }
-  
-  const comment = {
-    date: new Date(),
-    text: 'I hope you enjoy learning React!',
-    author: {
-      name: 'Hello Kitty',
-      avatarUrl: 'https://placekitten.com/g/64/64',
-    },
-  };
-  ReactDOM.render(
-    <Comment
-      date={comment.date}
-      text={comment.text}
-      author={comment.author}
-    />,
-    document.getElementById('root')
-  );
-  
 
+
+function 
 
 
 
