@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/1cf0a6846b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav">
+            <div class="drop-button">
+                Impostazioni Account <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="container">
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            <div class="icon"><i class="fa fa-home"></i></div>
+                            Home
+                        </a>
+                    </li>
+                    <li class="setting">
+                        <a href="#">
+                            <div class="icon"><i class="fa fa-cog"></i></div>
+                            Impostazioni<i class="fa fa-caret-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon"><i class="fa fa-lock"></i></div>
+                            Privacy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon"><i class="fa fa-users"></i></div>
+                            Amici
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon"><i class="fa fa-globe"></i></div>
+                            Lingua dell'App
+                        </a>
+                    </li>
+                </ul>
+                <!-- Impostazioni -->
+                <ul class="sub-menu">
+                    <li class="back-button"><i class="fa fa-caret-left"></i>Impostazioni</li>
+                    <li>
+                        <a href="#">
+                            <div class="icon"><i class="fa fa-user"></i></div>
+                            Informazioni Personali
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon"><i class="fa fa-comment"></i></div>
+                            Commenti
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            Supporto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon"><i class="fa fa-sign-out"></i></div>
+                            Log Out
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- nav -->
+    </nav>
+
+
+
+
+    <!-- Javascript  -->
+    <script>
+        // Creo la struttura per aprire il primo Drop down
+        const drop_button = document.querySelector('.drop-button');
+        const container_menu = document.querySelector('.container');
+
+        drop_button.onclick = ( () => {
+            container_menu.classList.toggle('show');
+        });
+
+        // Creo il secondo Drop Down 
+        const setting_item = document.querySelector('.setting');
+        const menu_bar = document.querySelector('.menu');
+        const sub_menu = document.querySelector('.sub-menu');
+
+        setting_item.onclick = (()=> {
+            menu_bar.style.marginLeft = '-400px';
+            sub_menu.style.display = 'block';
+        });
+        
+        // Creo il pulsante back 
+        const back_button = document.querySelector('.back-button');
+        back_button.onclick = (()=> {
+            menu_bar.style.marginLeft = '0';
+            sub_menu.style.display = 'none';
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #18191a;
+    font-family: "Montserrat", sans-serif ;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 0 30px;
+    margin-top: 30px;
+ }
+
+ .drop-button {
+     width: 400px;
+     background: #242526;
+     color: #b0b3b8;
+     padding: 15px 20px;
+     border-radius: 5px;
+     font-size: 20px;
+     font-weight: 500;
+     display: flex;
+ }
+
+ .drop-button .fa {
+     font-size: 28px;
+     cursor: ponter;
+     margin-left: auto;
+ }
+
+ /* Nav Menu */
+ .container {
+     position: absolute;
+     top: 65px;
+     left: 30px;
+     width: 400px;
+     display: flex;
+     overflow: hidden;
+     background: #242526;
+     border-radius: 5px;
+     transition: all .3s ease;
+     display: none;
+ }
+
+ .nav ul {
+     list-style: none;
+     width: 400px;
+     padding: 10px;
+     transition: all .3s ease;
+ }
+
+ .nav li {
+     line-height: 60px;
+ }
+
+ .nav a {
+     position: relative;
+     text-decoration: none;
+     color: #b0b3b8;
+     display: flex;
+     font-size: 18px;
+     font-weight: 500;
+     padding: 0 10px;
+     align-items: center;
+     border-radius: 5px;
+ }
+
+ .nav a:hover {
+     background: #3a3b3c;
+ }
+
+ .nav .icon {
+     width: 40px;
+     height: 40px;
+     margin-right: 13px;
+     background: #444546 ;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+ }
+
+ .nav .fa-caret-right {
+     margin-left: auto;
+     font-size: 25px;
+     pointer-events: none;
+ }
+
+ /* Impostazioni */
+
+.sub-menu li {
+    font-size: 20px;
+    color: #b0b3b8;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.nav .fa-caret-left {
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+/* Drop Down */
+.container.show {
+    display: flex;
+}
+
+.sub-menu {
+    display: none;
+}
